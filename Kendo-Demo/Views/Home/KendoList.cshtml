@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "KendoList";
+}
+
+<h2>KendoList</h2>
+
+
+<!--begin::Post-->
+<div class="flex-row-fluid" id="kt_content">
+
+    <div class="container">
+        
+        <div class="container">
+            <div id="listView">
+
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+<!--end::Post-->
+
+
+
+<script src="~/Scripts/Views/Home/View_KendoList.js"></script>
+
+<script type="text/x-kendo-template" id="ListTemplate">
+    <!--begin::Item-->
+                   <div class="d-flex align-items-sm-center mb-7">
+
+                       <!--begin::Section-->
+                       <div class="d-flex align-items-center flex-row-fluid flex-wrap">
+                           <div class="flex-grow-1 me-2">
+                               <a href="\\#" class="text-gray-800 text-hover-primary fs-6 fw-bold">#: ID  #</a>
+                               <span class="text-muted fw-semibold d-block fs-7">#: language #</span>
+                           </div>
+                       </div>
+                       <!--end::Section-->
+                   </div>
+                   <!--end::Item-->
+</script>

@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<!--begin::Post-->
+<div class="flex-row-fluid" id="kt_content" style="margin-top: 20px">
+
+    <!--begin::Toolbar-->
+    <div class="d-flex flex-wrap flex-stack my-5" >
+        <!--begin::Heading-->
+        <h2 class="fs-2 fw-semibold my-2" style=" display: flex; align-items: center; ">
+            Kendo Topics
+        </h2>
+        <!--end::Heading-->
+
+    </div>
+    <!--end::Toolbar-->
+    <!--begin::Row-->
+    <div id="TopicsViewList" class="row g-6 g-xl-9" style="margin-top: 52px">
+
+
+    </div>
+    <!--end::Row-->
+
+</div>
+<!--end::Post-->
+
+
+<script src="~/Scripts/Views/Home/View_HomeScript.js"></script>
+
+
+<script type="text/x-kendo-template" id="topicsTemplate">
+
+    <!--begin::Col-->
+    <div class="col-md-6 col-xl-4" onclick="redirect(#: ID #)" style="background-color: white;">
+        <!--begin::Card-->
+        <a class="card">
+            <!--begin::Card header-->
+            <div class="card-header">
+                <!--begin::Card Title-->
+                <div class="card-title m-0">
+                    <!--begin::Avatar-->
+                    <div class="symbol symbol-50px w-50px bg-light">
+                        <img src="/Content/download.png" alt="image" class="p-3" />
+                    </div>
+                    <!--end::Avatar-->
+                </div>
+                <!--end::Car Title-->
+            </div>
+    <br/>
+            <!--end:: Card header-->
+             <div class="card-body">
+                <!--begin::Name-->
+                <div class="fs-3 fw-bold text-dark">Kendo Topic #: ID#</div>
+                <!--end::Name-->
+                <!--begin::Description-->
+     <br/>
+               <h4 class="fw-bold me-auto px-4 py-3">#: Topic#</h4>
+                <!--end::Description-->
+
+            </div>
+        </a>
+        <!--end::Card-->
+    </div>
+    <!--end::Col-->
+
+</script>
